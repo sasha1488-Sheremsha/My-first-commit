@@ -161,3 +161,53 @@ header {
     font-weight: 500;
     margin: .5em 0;
 }
+
+.reshenie h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 100px;
+}
+.reshenie p {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 60px;
+    
+}
+.reshenie a {
+    font-weight:400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+a img {
+    width: 16px;
+    height: 16px;
+}
+.container {
+    padding: 12px;
+    display: grid;
+    gap: 12px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "a b c"
+        "d e e"
+}
+
+.reshenie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h1{
+    background-color: #FFF2DE;
+    padding: 22px 96px;
+}
+
+.a { grid-area: a; }
+.b { grid-area: b; }
+.c { grid-area: c; }
+.d { grid-area: d; }
+.e { grid-area: e; }
