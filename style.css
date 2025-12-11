@@ -26,9 +26,17 @@ nav {
     gap: 20%;
 
 }
+nav a {
+    min-width: 104px
+}
 header {
     width: 85vw;
 
+}
+.project {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px 18px;
 }
 .city {
     gap: 8px
@@ -44,11 +52,112 @@ header {
     background-size: cover;
     height: 88vh;
     padding: 14% 13%;
-    
+    border-radius: 40px;
+    display:flex ;
+    flex-direction: column;
 }
 .cover h1{
     font-family: 'Playfair Display SC';
     font-style: normal;
     font-weight: 400;
     font-size: 150px;
+}
+.cover p{
+    font-size: 24px;
+}
+.cover h3{
+    font-size: 36px;
+}
+.cover a {
+    font-size: 24px;
+    background-color: white;
+    height: 79px;
+    border-radius: 8px;
+    padding: 25px 20%;
+    margin-top: 80px;
+    width: 20%;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Технологии - technologies */
+.technologies {
+    width: calc(100vw - 128px);
+    margin-left: 64px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+}
+
+.technologies .card {
+    border: 1px solid #763A0B;
+    padding: 1.5em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.technologies .card .content img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.technologies .card .content h2 {
+    font-weight: 600;
+    margin: .5em 0;
+}
+
+.technologies .card .content p {
+    margin: 1em 0;
+}
+
+.btn-learnmore {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #763A0B;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.btn-learnmore img {
+    width: 1.2em;
+    height: 1em;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.btn-learnmore:hover {
+    text-decoration: none;
+}
+/* Чем можем похвастаться - advantages */
+.advantages {
+    width: calc(100vw - 128px);
+    margin-left: 64px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+}
+
+.advantages .card {
+    background-color: #FFF2DE;
+    padding: 1.5em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.advantages .card img {
+    width: 40%;
+}
+
+.advantages .card h2 {
+    font-weight: 500;
+    margin: .5em 0;
 }
